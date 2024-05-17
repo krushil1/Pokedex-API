@@ -15,6 +15,7 @@ defmodule PokedexWeb.Schema do
     field :height, :integer
     field :weight, :integer
     field :base_experience, :integer
+    field :image, :string
   end
 
   object :type do
@@ -35,5 +36,9 @@ defmodule PokedexWeb.Schema do
 
   object :base_experience do
     field :base_experience, :integer
+  end
+
+  object :image do
+    field :image, :string
   end
 end

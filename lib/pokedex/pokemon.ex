@@ -22,7 +22,9 @@ defmodule Pokedex.PokeAPI do
       abilities: Enum.map(data["abilities"], fn ability -> %{name: ability["ability"]["name"]} end),
       height: data["height"],
       weight: data["weight"],
-      base_experience: data["base_experience"]
+      base_experience: data["base_experience"],
+
+      image: data["sprites"]["front_default"]
     }
   end
 end
